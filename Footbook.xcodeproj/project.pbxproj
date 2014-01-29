@@ -25,6 +25,10 @@
 		C94BE99D189999820040C643 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94BE978189999810040C643 /* CoreData.framework */; };
 		C94BE9A5189999820040C643 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C94BE9A3189999820040C643 /* InfoPlist.strings */; };
 		C94BE9A7189999820040C643 /* FootbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C94BE9A6189999820040C643 /* FootbookTests.m */; };
+		C94BE9B218999DBB0040C643 /* AddFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94BE9B118999DBB0040C643 /* AddFriendsViewController.m */; };
+		C9C5C5C81899A3E00001A255 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5C5C71899A3E00001A255 /* Friend.m */; };
+		C9C5C5CB1899B6BC0001A255 /* AddPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5C5CA1899B6BC0001A255 /* AddPhotosViewController.m */; };
+		C9C5C5CE1899BEE30001A255 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5C5CD1899BEE30001A255 /* PhotoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,14 @@
 		C94BE9A2189999820040C643 /* FootbookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FootbookTests-Info.plist"; sourceTree = "<group>"; };
 		C94BE9A4189999820040C643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C94BE9A6189999820040C643 /* FootbookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FootbookTests.m; sourceTree = "<group>"; };
+		C94BE9B018999DBB0040C643 /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsViewController.h; sourceTree = "<group>"; };
+		C94BE9B118999DBB0040C643 /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsViewController.m; sourceTree = "<group>"; };
+		C9C5C5C61899A3E00001A255 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		C9C5C5C71899A3E00001A255 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		C9C5C5C91899B6BC0001A255 /* AddPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPhotosViewController.h; sourceTree = "<group>"; };
+		C9C5C5CA1899B6BC0001A255 /* AddPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPhotosViewController.m; sourceTree = "<group>"; };
+		C9C5C5CC1899BEE30001A255 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		C9C5C5CD1899BEE30001A255 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,12 +138,20 @@
 				C94BE983189999810040C643 /* AppDelegate.h */,
 				C94BE984189999810040C643 /* AppDelegate.m */,
 				C94BE986189999810040C643 /* Main.storyboard */,
+				C94BE9B018999DBB0040C643 /* AddFriendsViewController.h */,
+				C94BE9B118999DBB0040C643 /* AddFriendsViewController.m */,
 				C94BE98C189999810040C643 /* MasterViewController.h */,
 				C94BE98D189999810040C643 /* MasterViewController.m */,
 				C94BE98F189999810040C643 /* DetailViewController.h */,
 				C94BE990189999810040C643 /* DetailViewController.m */,
+				C9C5C5C91899B6BC0001A255 /* AddPhotosViewController.h */,
+				C9C5C5CA1899B6BC0001A255 /* AddPhotosViewController.m */,
+				C9C5C5CC1899BEE30001A255 /* PhotoCollectionViewCell.h */,
+				C9C5C5CD1899BEE30001A255 /* PhotoCollectionViewCell.m */,
 				C94BE992189999810040C643 /* Images.xcassets */,
 				C94BE989189999810040C643 /* Footbook.xcdatamodeld */,
+				C9C5C5C61899A3E00001A255 /* Friend.h */,
+				C9C5C5C71899A3E00001A255 /* Friend.m */,
 				C94BE97B189999810040C643 /* Supporting Files */,
 			);
 			path = Footbook;
@@ -264,9 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C94BE991189999810040C643 /* DetailViewController.m in Sources */,
+				C9C5C5CE1899BEE30001A255 /* PhotoCollectionViewCell.m in Sources */,
+				C9C5C5CB1899B6BC0001A255 /* AddPhotosViewController.m in Sources */,
+				C9C5C5C81899A3E00001A255 /* Friend.m in Sources */,
 				C94BE98E189999810040C643 /* MasterViewController.m in Sources */,
 				C94BE985189999810040C643 /* AppDelegate.m in Sources */,
 				C94BE98B189999810040C643 /* Footbook.xcdatamodeld in Sources */,
+				C94BE9B218999DBB0040C643 /* AddFriendsViewController.m in Sources */,
 				C94BE981189999810040C643 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +500,7 @@
 				C94BE9AC189999820040C643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C94BE9AD189999820040C643 /* Build configuration list for PBXNativeTarget "FootbookTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +509,7 @@
 				C94BE9AF189999820040C643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

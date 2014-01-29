@@ -7,8 +7,15 @@
 //
 
 #import "DetailViewController.h"
+#import "Friend.h"
 
 @interface DetailViewController ()
+{
+    Friend* friend;
+    __weak IBOutlet UILabel *feetLabel;
+    __weak IBOutlet UILabel *ratioLabel;
+    
+}
 - (void)configureView;
 @end
 
@@ -16,36 +23,25 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setDetailItem:(Friend*)newFriend
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
+    friend = newFriend;
+    self.title = friend.name;
 }
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
+    feetLabel.text = friend.feet.description;
+    ratioLabel.text = [NSString stringWithFormat:@"%.1f : %i (%.2f)(Lower is better!)",friend.shoeSize.floatValue, friend.prowess.intValue, (friend.shoeSize.floatValue / friend.prowess.intValue)];
 
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
-    }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
     [self configureView];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
